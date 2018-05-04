@@ -1,26 +1,9 @@
-abstract class CellPhone {
-    private battery: string = 'none';
-    screen;
-    case;
-    camera;
-
-    call(phoneNumber: string): void;
-
-    setBattery(battery): void {
-        this.battery = battery;
-    }
+class CellPhone {
+    constructor(public screen: string) {}
 }
 
-class SmartPhone extends CellPhone {
-    browseTheWeb(url) {
+let iphone = new CellPhone('4k');
+iphone.screen; //4k
 
-    }
-}
-
-class DumbPhone extends CellPhone {
-
-}
-
-let smartPhone = new SmartPhone();
-
-let dumbPhone = new DumbPhone();
+let android = new CellPhone('780p');
+android.screen; //720p
