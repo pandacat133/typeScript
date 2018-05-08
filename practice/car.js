@@ -10,7 +10,7 @@ var Car = /** @class */ (function () {
     Car.prototype.accelerate = function () {
         console.log('car is accelerating');
     };
-    Car.prototype.break = function () {
+    Car.prototype["break"] = function () {
         console.log('car is breaking');
     };
     Car.prototype.turnOnStereo = function () {
